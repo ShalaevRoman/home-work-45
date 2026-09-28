@@ -8,3 +8,13 @@ export interface Product {
   category: ProductCategory
   emoji: string
 }
+
+export interface CartItem {
+  productId: string
+  quantity: number
+}
+
+export interface CartLineItem {
+  product: Product
+  quantity: number
+}
